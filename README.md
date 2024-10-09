@@ -38,7 +38,8 @@ ORDER BY 1,2,3
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/e2c07352-6889-4bc2-b7c8-8878ee868db2)
+![image](https://github.com/user-attachments/assets/223ad8aa-9be5-4bf4-ae05-04736f0ba494)
+
 
 ### Q1. How many customers has Foodie-Fi ever had?
 ```sql
@@ -48,7 +49,7 @@ FROM foodie_fi.subscriptions;
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/345bfd7e-586f-4f69-a2d7-087a7c8bd48c)
+![image](https://github.com/user-attachments/assets/d3dc2867-fb05-44ee-9dc3-ee5632f061eb)
 
 ### Q2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
 ```sql
@@ -62,7 +63,7 @@ ORDER BY 1;
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/c1ed9ae3-4dee-41e9-991e-0e9a3cb3c4c2)
+![image](https://github.com/user-attachments/assets/240c46a6-a47c-4a29-b30e-d90ea0e07653)
 
 ### Q3. What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name
 ```sql
@@ -77,7 +78,7 @@ ORDER BY 1;
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/ae0d1ab2-44ea-4902-b84e-45099ff73316)
+![image](https://github.com/user-attachments/assets/f3970b58-fb1b-4401-9d58-80b7ff7552ba)
 
 ### Q4. What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
 ```sql
@@ -96,7 +97,8 @@ FROM caculation
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/3acb862e-c59c-49f3-acec-7352402956ac)
+![image](https://github.com/user-attachments/assets/74d19226-4a09-445a-98cb-6e56d0cfc59a)
+
 
 ### Q5. How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
 ```sql
@@ -121,8 +123,7 @@ FROM caculation;
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/97acebf2-76dd-424d-a857-aac1ff103bd3)
-
+![image](https://github.com/user-attachments/assets/3da6538a-8523-4ebb-bc5f-a8b152494ad4)
 
 ### Q6. What is the number and percentage of customer plans after their initial free trial?
 ```sql
@@ -148,7 +149,7 @@ ORDER BY 1;
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/c04f62e4-afe2-477e-8241-585d397339ed)
+![image](https://github.com/user-attachments/assets/b727c88d-2fdd-4373-9ae7-e379f23a9562)
 
 
 ### Q7. What is the customer count breakdown of all 5 plan_name values at 2020-12-31?
@@ -162,10 +163,9 @@ GROUP BY 1
 ORDER BY 1;
 ```
 
-_Result: no value_
+_Result:_
 
-![image](https://github.com/user-attachments/assets/2741469d-1e0c-48d6-b8d7-5d2911516f39)
-
+![image](https://github.com/user-attachments/assets/7007ddfc-744e-4253-a8c5-9f6ad75fc7de)
 
 ### Q8. How many customers have upgraded to an annual plan in 2020?
 ```sql
@@ -177,7 +177,7 @@ WHERE plan_id = '3' and extract(year from start_date) = 2020
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/f4c66af8-1ae5-4616-a958-ba92817a03cf)
+![image](https://github.com/user-attachments/assets/2ea33420-39ee-4316-8b52-92a6f3016875)
 
 ### Q9. How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
 ```sql
@@ -190,7 +190,7 @@ WHERE aud.plan_id = '3' and td.plan_id = '0'
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/dcb9e105-56be-42a8-a730-ad9dc16e95d0)
+![image](https://github.com/user-attachments/assets/c069e158-fbfd-408b-a30d-2115a9c7b2d8)
 
 ### Q10. Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
 ```sql
@@ -209,7 +209,7 @@ ORDER BY 1
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/42d5e01a-299b-4265-8aed-a7be1f5ece44)
+![image](https://github.com/user-attachments/assets/5901e90e-ddec-4d66-b7dd-5475079bb230)
 
 
 ### Q11. How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
@@ -225,7 +225,7 @@ WHERE pro.plan_id = '2' and bas.plan_id = '1'
 
 _Result:_
 
-![image](https://github.com/user-attachments/assets/087012e7-1726-414f-b658-23a728087d57)
+![image](https://github.com/user-attachments/assets/396f7cd5-808e-4c23-837f-3ea5be2e155e)
 
 
 Thank you for stopping by, and I'm pleased to connect with you, my new friend!
